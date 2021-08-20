@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-20T09:34:47.275Z",
+    "end": "2021-08-20T09:35:05.001Z",
+    "duration": 17726,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "af5ecf0a-64c7-49df-bca0-c8f9ccddb89c",
+      "title": "",
+      "fullFile": "cypress/integration/new-client.spec.js",
+      "file": "cypress/integration/new-client.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5591b43b-ef30-4eb5-a7f1-5de4952e25cc",
+          "title": "Testsuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new client",
+              "fullTitle": "Testsuite Create a new client",
+              "timedOut": null,
+              "duration": 6892,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewClients(\"Clients\"); //  cy.wait(500)\n// cy.percySnapshot(\"Clients page\");\nclientsPage.viewNewClient(\"New Client\"); // cy.wait(500)\n// cy.percySnapshot(\"New Client Page\");\nnewClientPage.createNewClient(randomName, randomMail, randomPhone, \"Clients\");\nclientsPage.verifyLastClient(randomName, randomMail, randomPhone); // cy.percySnapshot(\"New Client is created and verified\")",
+              "err": {},
+              "uuid": "ddc622e6-da36-4087-a45b-67d6fa7d80b7",
+              "parentUUID": "5591b43b-ef30-4eb5-a7f1-5de4952e25cc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout",
+              "fullTitle": "Testsuite Logout",
+              "timedOut": null,
+              "duration": 4435,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.logoutUser(\"Login\"); // cy.wait(500)\n// cy.percySnapshot(\"User logges out and returns to Login page\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "b76aa1d3-c197-48ea-84dd-9cabe6e0bc4f",
+              "parentUUID": "5591b43b-ef30-4eb5-a7f1-5de4952e25cc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ddc622e6-da36-4087-a45b-67d6fa7d80b7",
+            "b76aa1d3-c197-48ea-84dd-9cabe6e0bc4f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11327,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

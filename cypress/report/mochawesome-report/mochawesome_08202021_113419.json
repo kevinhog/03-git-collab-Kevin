@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-20T09:34:05.197Z",
+    "end": "2021-08-20T09:34:19.282Z",
+    "duration": 14085,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "71137981-87b1-4f44-aac8-ab6b60b10f7d",
+      "title": "",
+      "fullFile": "cypress/integration/Check-pages.spec.js",
+      "file": "cypress/integration/Check-pages.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ea862b1f-8cc8-42d0-9976-37700a3fa0df",
+          "title": "Go to all pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Go to Rooms",
+              "fullTitle": "Go to all pages Go to Rooms",
+              "timedOut": null,
+              "duration": 3666,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");",
+              "err": {},
+              "uuid": "0569ec4d-d6e1-45ad-a79a-6dc23022ee58",
+              "parentUUID": "ea862b1f-8cc8-42d0-9976-37700a3fa0df",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Clients",
+              "fullTitle": "Go to all pages Go to Clients",
+              "timedOut": null,
+              "duration": 2424,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewClients(\"Clients\");",
+              "err": {},
+              "uuid": "ddb623e1-89cd-4d9b-be67-a67ae71f7706",
+              "parentUUID": "ea862b1f-8cc8-42d0-9976-37700a3fa0df",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Bills",
+              "fullTitle": "Go to all pages Go to Bills",
+              "timedOut": null,
+              "duration": 2500,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewBills(\"Bills\");",
+              "err": {},
+              "uuid": "e7430a75-973b-47a4-9bd7-508f661c8052",
+              "parentUUID": "ea862b1f-8cc8-42d0-9976-37700a3fa0df",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Resurvations",
+              "fullTitle": "Go to all pages Go to Resurvations",
+              "timedOut": null,
+              "duration": 2304,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewResurvations(\"Reservations\");",
+              "err": {},
+              "uuid": "cfc55c1e-b423-4b40-824d-b5f1857d791b",
+              "parentUUID": "ea862b1f-8cc8-42d0-9976-37700a3fa0df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0569ec4d-d6e1-45ad-a79a-6dc23022ee58",
+            "ddb623e1-89cd-4d9b-be67-a67ae71f7706",
+            "e7430a75-973b-47a4-9bd7-508f661c8052",
+            "cfc55c1e-b423-4b40-824d-b5f1857d791b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10894,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

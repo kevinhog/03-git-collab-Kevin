@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-20T09:35:47.463Z",
+    "end": "2021-08-20T09:36:04.793Z",
+    "duration": 17330,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06557035-a939-46cc-85d6-99cb7eef166c",
+      "title": "",
+      "fullFile": "cypress/integration/new-room.spec.js",
+      "file": "cypress/integration/new-room.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d7f706bf-ab67-4865-aa11-c0a66cfaa679",
+          "title": "create a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new room",
+              "fullTitle": "create a room Create a new room",
+              "timedOut": null,
+              "duration": 5511,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewRooms(\"Rooms\"); // cy.wait(500)\n// cy.percySnapshot(\"Rooms page\");\nroomsPage.viewNewRoom(\"New Room\"); // cy.wait(500)\n// cy.percySnapshot(\"New Room Page\");\nnewRoomPage.createNewRoom(randomCategory, randomNumber, randomFloor, randomPrice, randomFeature, \"Rooms\");\ncy.wait(500);\nif (randomFeature == \"sea_view\") {\n  randomFeature = \"sea view\";\n}\nroomsPage.verifyLastRoom(randomCategory, randomNumber, randomFloor, randomPrice, randomFeature); // cy.wait(500)\n// cy.percySnapshot(\"New Room is created and verified\");",
+              "err": {},
+              "uuid": "0728f36d-1818-4099-9966-976758e4b7fa",
+              "parentUUID": "d7f706bf-ab67-4865-aa11-c0a66cfaa679",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout",
+              "fullTitle": "create a room Logout",
+              "timedOut": null,
+              "duration": 5356,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.logoutUser(\"Login\"); // cy.wait(500)\n// cy.percySnapshot(\"User logges out and returns to Login page\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "30705613-cb4c-48fa-b145-4e9388f25b72",
+              "parentUUID": "d7f706bf-ab67-4865-aa11-c0a66cfaa679",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0728f36d-1818-4099-9966-976758e4b7fa",
+            "30705613-cb4c-48fa-b145-4e9388f25b72"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10867,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

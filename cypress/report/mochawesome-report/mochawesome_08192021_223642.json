@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-19T20:36:37.904Z",
+    "end": "2021-08-19T20:36:42.889Z",
+    "duration": 4985,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8539268f-c1a8-48a1-8d4a-175e1d117e5b",
+      "title": "",
+      "fullFile": "cypress/integration/new-room.spec.js",
+      "file": "cypress/integration/new-room.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e236c9bd-0ab7-45e2-a7d3-489c3a29ce76",
+          "title": "Testsuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new room",
+              "fullTitle": "Testsuite Create a new room",
+              "timedOut": null,
+              "duration": 3105,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewRooms(\"Rooms\"); // cy.wait(500)\n// cy.percySnapshot(\"Rooms page\");\nroomsPage.viewNewRoom(\"New Room\"); // cy.wait(500)\n// cy.percySnapshot(\"New Room Page\");\nnewRoomPage.createNewRoom(randomCategory, randomNumber, randomFloor, randomPrice, randomFeature, \"Rooms\");\ncy.wait(500);\nif (randomFeature == \"sea_view\") {\n  randomFeature = \"sea view\";\n}\nroomsPage.verifyLastRoom(randomCategory, randomNumber, randomFloor, randomPrice, randomFeature); // cy.wait(500)\n// cy.percySnapshot(\"New Room is created and verified\");",
+              "err": {
+                "message": "ReferenceError: randomCategory is not defined",
+                "estack": "ReferenceError: randomCategory is not defined\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress\\integration\\new-room.spec.js:130:31)",
+                "diff": null
+              },
+              "uuid": "2f6d3130-a366-4f64-a37a-93a2a574bb77",
+              "parentUUID": "e236c9bd-0ab7-45e2-a7d3-489c3a29ce76",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2f6d3130-a366-4f64-a37a-93a2a574bb77"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3105,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

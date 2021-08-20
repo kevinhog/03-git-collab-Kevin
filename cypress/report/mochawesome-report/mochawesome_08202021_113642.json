@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-20T09:36:33.882Z",
+    "end": "2021-08-20T09:36:42.755Z",
+    "duration": 8873,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f4c7ec4c-b790-4f59-99b5-e9684153138d",
+      "title": "",
+      "fullFile": "cypress/integration/remove-client.spec.js",
+      "file": "cypress/integration/remove-client.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d48626ce-3a1a-4da1-a8aa-786004c83737",
+          "title": "Delete client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Delete last client",
+              "fullTitle": "Delete client Delete last client",
+              "timedOut": null,
+              "duration": 3745,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewClients(\"Clients\"); // cy.wait(500)\n// cy.percySnapshot(\"Clients page\");\n//clientsPage.viewNewClient(\"New Client\")\nclientsPage.deleteLastClient(); // cy.wait(500)\n// cy.percySnapshot(\"Last Client is removed\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "49c865d9-1115-4949-b257-e61061a08694",
+              "parentUUID": "d48626ce-3a1a-4da1-a8aa-786004c83737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout",
+              "fullTitle": "Delete client Logout",
+              "timedOut": null,
+              "duration": 3012,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.logoutUser(\"Login\"); // cy.wait(500)\n// cy.percySnapshot(\"User logges out and returns to Login page\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "641f8b5e-0ca1-4e16-b9c8-529698438c4f",
+              "parentUUID": "d48626ce-3a1a-4da1-a8aa-786004c83737",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "49c865d9-1115-4949-b257-e61061a08694",
+            "641f8b5e-0ca1-4e16-b9c8-529698438c4f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6757,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

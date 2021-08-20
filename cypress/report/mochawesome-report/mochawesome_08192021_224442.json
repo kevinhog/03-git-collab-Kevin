@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-19T20:44:35.154Z",
+    "end": "2021-08-19T20:44:42.679Z",
+    "duration": 7525,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "174297d0-fa78-4f23-83c9-3f9fdf56b9db",
+      "title": "",
+      "fullFile": "cypress/integration/remove-room.spec.js",
+      "file": "cypress/integration/remove-room.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "06ab1c4e-6944-4f49-b89d-47b01069308e",
+          "title": "Delete Room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Delete last room",
+              "fullTitle": "Delete Room Delete last room",
+              "timedOut": null,
+              "duration": 3136,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewRooms(\"Rooms\");\ncy.wait(500); // cy.percySnapshot(\"Rooms page\");\n//clientsPage.viewNewClient(\"New Client\")\nroomsPage.deleteLastRoom(); // cy.wait(500)\n// cy.percySnapshot(\"Last room has been removed\");",
+              "err": {},
+              "uuid": "f1d198cd-7269-402d-a68f-c66629d06e6d",
+              "parentUUID": "06ab1c4e-6944-4f49-b89d-47b01069308e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout",
+              "fullTitle": "Delete Room Logout",
+              "timedOut": null,
+              "duration": 2706,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.logoutUser(\"Login\"); // cy.wait(500)\n// cy.percySnapshot(\"User logges out and returns to Login page\");\ncy.wait(500);",
+              "err": {},
+              "uuid": "851f3c87-0fdc-495d-a5da-7653967ab975",
+              "parentUUID": "06ab1c4e-6944-4f49-b89d-47b01069308e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1d198cd-7269-402d-a68f-c66629d06e6d",
+            "851f3c87-0fdc-495d-a5da-7653967ab975"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5842,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

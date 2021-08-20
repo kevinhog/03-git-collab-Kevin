@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-20T09:36:54.833Z",
+    "end": "2021-08-20T09:37:05.801Z",
+    "duration": 10968,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8cf46971-75b8-4493-bad5-418e58cb987f",
+      "title": "",
+      "fullFile": "cypress/integration/remove-room.spec.js",
+      "file": "cypress/integration/remove-room.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "66dcdc50-de45-4514-881a-e0fc0b959621",
+          "title": "Delete Room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Delete last room",
+              "fullTitle": "Delete Room Delete last room",
+              "timedOut": null,
+              "duration": 3720,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewRooms(\"Rooms\");\ncy.wait(500); // cy.percySnapshot(\"Rooms page\");\n//clientsPage.viewNewClient(\"New Client\")\nroomsPage.deleteLastRoom(); // cy.wait(500)\n// cy.percySnapshot(\"Last room has been removed\");",
+              "err": {},
+              "uuid": "531630e4-ceb5-4048-8ccb-b072593acfc0",
+              "parentUUID": "66dcdc50-de45-4514-881a-e0fc0b959621",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout",
+              "fullTitle": "Delete Room Logout",
+              "timedOut": null,
+              "duration": 4948,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.logoutUser(\"Login\"); // cy.wait(500)\n// cy.percySnapshot(\"User logges out and returns to Login page\");\ncy.wait(500);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<h2>' to contain 'Login'\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Delete Room`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<h2>' to contain 'Login'\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Delete Room`\n    at Object.confirmHeader (http://localhost:3000/__cypress/tests?p=cypress\\integration\\remove-room.spec.js:198:18)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress\\integration\\remove-room.spec.js:115:15)",
+                "diff": null
+              },
+              "uuid": "9040b6b7-92c8-4737-a18a-6158b64ecd96",
+              "parentUUID": "66dcdc50-de45-4514-881a-e0fc0b959621",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "531630e4-ceb5-4048-8ccb-b072593acfc0"
+          ],
+          "failures": [
+            "9040b6b7-92c8-4737-a18a-6158b64ecd96"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8668,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
